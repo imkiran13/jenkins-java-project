@@ -52,6 +52,20 @@
 		<url>http://repo1.maven.org/maven2</url>
 	    </pluginRepository>
 	</pluginRepositories>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use the latest version if it's newer -->
+
+            <configuration>
+                <source>11</source> <!-- Set your source version, e.g., 1.8 for Java 8 -->
+                <target>11</target> <!-- Set your target version, e.g., 1.8 for Java 8 -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
 	
 </project>
